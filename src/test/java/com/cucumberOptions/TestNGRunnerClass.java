@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-features="src/test/java/features", glue={"dataDriven","stepDefinitions","hooks"} , monochrome=true,
+features="src/test/java/features", glue={"stepDefinitions"} , monochrome=true,
 tags=("@Datadriven"), dryRun=false, plugin = {"pretty", "json:target/cucumber-report.json"}
 )
 public class TestNGRunnerClass extends AbstractTestNGCucumberTests {
